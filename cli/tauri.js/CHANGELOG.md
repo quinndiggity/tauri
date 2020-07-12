@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.0]
+
+-   Move types exported in the tauri js api into the modules that use them. For
+    example, Event is now available from tauri/api/event instead of
+    tauri/api/types/event.
+        - [660a2d8](https://www.github.com/tauri-apps/tauri/commit/660a2d87d6acf0abf6be70c01e6402cb5aba96c7) feat(tauri.js) move exported api types into api modules (fix [#807](https://www.github.com/tauri-apps/tauri/pull/807)) ([#809](https://www.github.com/tauri-apps/tauri/pull/809)) on 2020-07-12
+
 ## [0.9.1]
 
 -   Fixes Edge blank screen on Windows when running tauri dev (Tauri crashing window due to Edge reloading app because of missing Content-Type header).

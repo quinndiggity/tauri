@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.8.0]
+
+-   Plugin system added. You can hook into the webview lifecycle (created, ready) and extend the API adding logic to the invoke_handler by implementing the tauri::plugin::Plugin trait.
+    -   [78afee9](https://www.github.com/tauri-apps/tauri/commit/78afee9725e0e372f9de7edeaac523011a1c02a3) feat(tauri) add plugin system for rust ([#494](https://www.github.com/tauri-apps/tauri/pull/494)) on 2020-07-12
+
 ## [0.7.5]
 
 -   Fixes Edge blank screen on Windows when running tauri dev (Tauri crashing window due to Edge reloading app because of missing Content-Type header).
